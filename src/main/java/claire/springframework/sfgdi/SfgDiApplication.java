@@ -1,5 +1,6 @@
 package claire.springframework.sfgdi;
 
+import claire.springframework.sfgdi.controllers.ConstructorInjectedController;
 import claire.springframework.sfgdi.controllers.MyController;
 import claire.springframework.sfgdi.controllers.PropertyInjectedController;
 import claire.springframework.sfgdi.controllers.SetterInjectedController;
@@ -30,6 +31,12 @@ public class SfgDiApplication {
         SetterInjectedController setterInjectedController = (SetterInjectedController) ctx.getBean("setterInjectedController");
 
         System.out.println(setterInjectedController.getGreeting());
+
+        System.out.println("--------------- Constructor");
+
+        ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
+
+        System.out.println(constructorInjectedController.getGreeting());
     }
 
 }

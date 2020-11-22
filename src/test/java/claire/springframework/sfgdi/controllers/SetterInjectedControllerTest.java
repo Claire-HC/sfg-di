@@ -15,7 +15,7 @@ class SetterInjectedControllerTest {
     }
 
     @Test
-    void getGreeting() {
+    void getGreeting() throws Exception{
         System.out.println(controller.getGreeting());
     }
 }

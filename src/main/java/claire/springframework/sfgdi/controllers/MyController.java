@@ -1,6 +1,6 @@
 package claire.springframework.sfgdi.controllers;
 
-import claire.springframework.sfgdi.services.GreetingService;
+import claire.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 /**

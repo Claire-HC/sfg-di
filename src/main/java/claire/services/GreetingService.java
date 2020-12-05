@@ -1,4 +1,4 @@
-package claire.springframework.sfgdi.services;
+package claire.services;
 
 /**
  * Created by claire on 21/11/20

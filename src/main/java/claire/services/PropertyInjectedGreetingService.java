@@ -1,4 +1,4 @@
-package claire.springframework.sfgdi.services;
+package claire.services;
 
 import org.springframework.stereotype.Service;
 

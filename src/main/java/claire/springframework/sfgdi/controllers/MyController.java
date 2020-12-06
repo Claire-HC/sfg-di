@@ -1,6 +1,8 @@
 package claire.springframework.sfgdi.controllers;
 
-import claire.services.GreetingService;
+import claire.springframework.sfgdi.services.GreetingService;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -9,13 +11,15 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class MyController {
 
-    private final GreetingService greetingService;
+    private GreetingService greetingService;
 
-    public MyController(GreetingService greetingService) {
+    public MyController(@Qualifier("primaryGermanGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
-    public String sayHello(){
+    public String hello(){
+        System.out.println("Helllo!!!");
+
         return greetingService.sayGreeting();
     }
 }

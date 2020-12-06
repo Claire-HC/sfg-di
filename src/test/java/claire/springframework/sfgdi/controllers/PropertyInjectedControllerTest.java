@@ -1,6 +1,6 @@
 package claire.springframework.sfgdi.controllers;
 
-import claire.services.ConstructorGreetingService;
+import claire.springframework.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
